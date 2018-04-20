@@ -12,6 +12,7 @@ namespace Web.Controllers
         public ActionResult Index()
         {
             string a = "aaaaaaa";
+            string b = "aaaaaaa";
             return View();
         }
 
