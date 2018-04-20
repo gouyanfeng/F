@@ -13,6 +13,7 @@ namespace Web.Controllers
         {
             string a = "aaaaaaa";
             string b = "aaaaaaa";
+            string c = "aaaaaaa";
             return View();
         }
 
