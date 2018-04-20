@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Index";
+
+
+}
+
+
+<table>
+
+    <tr>
+        <td><input type="text" id="txtSendMsg" /></td>
+        <td><input type="button" name="name" id="btnSend" value="发送消息" /></td>
+    </tr>
+
+</table>
+
+
+
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script>
+
+    $(function () {
+        $("#btnSend").on("click", function () {
+
+            $.get("/Home/RabbitSend", { message: $("#txtSendMsg").val() }, function (res) { })
+        });
+
+    });
+</script>

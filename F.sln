@@ -1,0 +1,109 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{C01C8222-A674-4E45-ADA0-78814313896B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{8168C36B-277D-47DB-8F6E-2C7D17E4622D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{66520DF2-FE4B-49AE-8347-85EA4268F699}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisPub", "LogClient\RedisPub.csproj", "{1365ED4E-759A-4B5A-B0EE-7D14158B92C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisSub", "RedisSub\RedisSub.csproj", "{C0F1EEBD-9EFC-4C23-BF2F-CBDAD61F52BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitPub", "RabbitMQ\RabbitPub.csproj", "{AFA1DC3B-77D6-48AF-8084-272E9A3C0491}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitSub", "RabbitSub\RabbitSub.csproj", "{1EAAE774-FE8A-414F-85E8-D721ED6A2E86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{9A100036-8A8E-4AA1-8AAA-416C5DE7B152}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MQ", "MQ", "{7EB2BCE2-E069-4A6D-9819-313E136C8987}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C01C8222-A674-4E45-ADA0-78814313896B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C01C8222-A674-4E45-ADA0-78814313896B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C01C8222-A674-4E45-ADA0-78814313896B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C01C8222-A674-4E45-ADA0-78814313896B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8168C36B-277D-47DB-8F6E-2C7D17E4622D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8168C36B-277D-47DB-8F6E-2C7D17E4622D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8168C36B-277D-47DB-8F6E-2C7D17E4622D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8168C36B-277D-47DB-8F6E-2C7D17E4622D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66520DF2-FE4B-49AE-8347-85EA4268F699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66520DF2-FE4B-49AE-8347-85EA4268F699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66520DF2-FE4B-49AE-8347-85EA4268F699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66520DF2-FE4B-49AE-8347-85EA4268F699}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1365ED4E-759A-4B5A-B0EE-7D14158B92C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1365ED4E-759A-4B5A-B0EE-7D14158B92C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1365ED4E-759A-4B5A-B0EE-7D14158B92C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1365ED4E-759A-4B5A-B0EE-7D14158B92C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0F1EEBD-9EFC-4C23-BF2F-CBDAD61F52BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0F1EEBD-9EFC-4C23-BF2F-CBDAD61F52BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0F1EEBD-9EFC-4C23-BF2F-CBDAD61F52BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0F1EEBD-9EFC-4C23-BF2F-CBDAD61F52BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFA1DC3B-77D6-48AF-8084-272E9A3C0491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFA1DC3B-77D6-48AF-8084-272E9A3C0491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFA1DC3B-77D6-48AF-8084-272E9A3C0491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFA1DC3B-77D6-48AF-8084-272E9A3C0491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EAAE774-FE8A-414F-85E8-D721ED6A2E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EAAE774-FE8A-414F-85E8-D721ED6A2E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EAAE774-FE8A-414F-85E8-D721ED6A2E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EAAE774-FE8A-414F-85E8-D721ED6A2E86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A100036-8A8E-4AA1-8AAA-416C5DE7B152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A100036-8A8E-4AA1-8AAA-416C5DE7B152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A100036-8A8E-4AA1-8AAA-416C5DE7B152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A100036-8A8E-4AA1-8AAA-416C5DE7B152}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1365ED4E-759A-4B5A-B0EE-7D14158B92C7} = {7EB2BCE2-E069-4A6D-9819-313E136C8987}
+		{C0F1EEBD-9EFC-4C23-BF2F-CBDAD61F52BD} = {7EB2BCE2-E069-4A6D-9819-313E136C8987}
+		{AFA1DC3B-77D6-48AF-8084-272E9A3C0491} = {7EB2BCE2-E069-4A6D-9819-313E136C8987}
+		{1EAAE774-FE8A-414F-85E8-D721ED6A2E86} = {7EB2BCE2-E069-4A6D-9819-313E136C8987}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6675DF9-C639-4EAB-AFA1-3A511077DC02}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://gouyanfeng.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Common\\Common.csproj
+		SccProjectName1 = Common
+		SccLocalPath1 = Common
+		SccProjectUniqueName2 = DAL\\DAL.csproj
+		SccProjectName2 = DAL
+		SccLocalPath2 = DAL
+		SccProjectUniqueName3 = BLL\\BLL.csproj
+		SccProjectName3 = BLL
+		SccLocalPath3 = BLL
+		SccProjectUniqueName4 = RedisSub\\RedisSub.csproj
+		SccProjectTopLevelParentUniqueName4 = F.sln
+		SccProjectName4 = RedisSub
+		SccLocalPath4 = RedisSub
+		SccProjectUniqueName5 = LogClient\\RedisPub.csproj
+		SccProjectTopLevelParentUniqueName5 = F.sln
+		SccProjectName5 = LogClient
+		SccLocalPath5 = LogClient
+		SccProjectUniqueName6 = RabbitSub\\RabbitSub.csproj
+		SccProjectTopLevelParentUniqueName6 = F.sln
+		SccProjectName6 = RabbitSub
+		SccLocalPath6 = RabbitSub
+		SccProjectUniqueName7 = RabbitMQ\\RabbitPub.csproj
+		SccProjectTopLevelParentUniqueName7 = F.sln
+		SccProjectName7 = RabbitMQ
+		SccLocalPath7 = RabbitMQ
+		SccProjectUniqueName8 = Web\\Web.csproj
+		SccProjectName8 = Web
+		SccLocalPath8 = Web
+	EndGlobalSection
+EndGlobal
