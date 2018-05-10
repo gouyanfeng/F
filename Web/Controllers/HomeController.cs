@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 
@@ -9,22 +10,29 @@ namespace Web.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            string a = "aaaaaaa";
-            string b = "aaaaaaa";
-            string c = "aaaaaaa";
-            string d = "aaaaaaa";
-            string e = "aaaaaaa";
-            string f = "aaaaaaa";
-            string h = "aaaaaaa";
+
+            CityService cityService = new CityService();
+            cityService.Create();
+
+            var a = 1;
+
+            var c = A();
+
+
+
+
+            a = 1;
+
+            var ccc = await c;
             return View();
         }
 
         public ActionResult About(AAA aaa)
         {
 
-            aaa.A = "1111111";
+
 
             return View();
         }
@@ -33,9 +41,20 @@ namespace Web.Controllers
         {
 
 
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
+
+
+        public async Task<int> A()
+        {
+            return await Task.Run(() =>
+            {
+
+                System.Threading.Thread.Sleep(1000 * 5);
+                return 1;
+
+            });
+        }
+
     }
 }

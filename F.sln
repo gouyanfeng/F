@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MQ", "MQ", "{7EB2BCE2-E069-4A6D-9819-313E136C8987}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APP", "APP\APP.csproj", "{79D0185A-1444-4DCC-A5C2-8893D9F31FA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APPNET", "APPNET\APPNET.csproj", "{22416C78-C462-49E9-9F32-5925677412F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +63,14 @@ Global
 		{9A100036-8A8E-4AA1-8AAA-416C5DE7B152}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A100036-8A8E-4AA1-8AAA-416C5DE7B152}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A100036-8A8E-4AA1-8AAA-416C5DE7B152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D0185A-1444-4DCC-A5C2-8893D9F31FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D0185A-1444-4DCC-A5C2-8893D9F31FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D0185A-1444-4DCC-A5C2-8893D9F31FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D0185A-1444-4DCC-A5C2-8893D9F31FA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22416C78-C462-49E9-9F32-5925677412F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22416C78-C462-49E9-9F32-5925677412F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22416C78-C462-49E9-9F32-5925677412F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22416C78-C462-49E9-9F32-5925677412F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,39 +83,5 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A6675DF9-C639-4EAB-AFA1-3A511077DC02}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 9
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://gouyanfeng.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Common\\Common.csproj
-		SccProjectName1 = Common
-		SccLocalPath1 = Common
-		SccProjectUniqueName2 = DAL\\DAL.csproj
-		SccProjectName2 = DAL
-		SccLocalPath2 = DAL
-		SccProjectUniqueName3 = BLL\\BLL.csproj
-		SccProjectName3 = BLL
-		SccLocalPath3 = BLL
-		SccProjectUniqueName4 = RedisSub\\RedisSub.csproj
-		SccProjectTopLevelParentUniqueName4 = F.sln
-		SccProjectName4 = RedisSub
-		SccLocalPath4 = RedisSub
-		SccProjectUniqueName5 = LogClient\\RedisPub.csproj
-		SccProjectTopLevelParentUniqueName5 = F.sln
-		SccProjectName5 = LogClient
-		SccLocalPath5 = LogClient
-		SccProjectUniqueName6 = RabbitSub\\RabbitSub.csproj
-		SccProjectTopLevelParentUniqueName6 = F.sln
-		SccProjectName6 = RabbitSub
-		SccLocalPath6 = RabbitSub
-		SccProjectUniqueName7 = RabbitMQ\\RabbitPub.csproj
-		SccProjectTopLevelParentUniqueName7 = F.sln
-		SccProjectName7 = RabbitMQ
-		SccLocalPath7 = RabbitMQ
-		SccProjectUniqueName8 = Web\\Web.csproj
-		SccProjectName8 = Web
-		SccLocalPath8 = Web
 	EndGlobalSection
 EndGlobal

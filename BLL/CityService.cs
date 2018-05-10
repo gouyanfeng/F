@@ -1,4 +1,5 @@
-﻿using DAL.Model;
+﻿using DAL;
+using DAL.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ namespace BLL
         public bool Create()
         {
             new CityRepository().Create(new City { CountryCode = "2" });
+            DbContextFactory.GetCurrentDbContext()
             return true;
         }
 
