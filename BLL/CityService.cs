@@ -10,16 +10,29 @@ namespace BLL
 {
     public class CityService
     {
+        private BaseRepository<City> cityRepository { get; set; }
+        public CityService()
+        {
+            cityRepository = new BaseRepository<City>();
+            cityRepository.Context.Database.Log = Console.WriteLine;
+        }
+
         public bool Create()
         {
-            new CityRepository().Create(new City { CountryCode = "2" });
-            DbContextFactory.GetCurrentDbContext()
+
+            var bb = from a in cityRepository.Table select a;
+            var cc = from a in cityRepository.Table select a;
+            var dd = bb.Union(cc);
+            var ff = dd.ToList();
+
+            cityRepository.Create(new City { CountryCode = "2" });
+            var i = cityRepository.Context.SaveChanges();
             return true;
         }
 
         public bool GetList()
         {
-            var list = new CityRepository().GetList(o => true);
+            cityRepository.GetList((c) => true);
             return true;
         }
     }

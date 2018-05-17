@@ -9,9 +9,9 @@ namespace DAL
 {
     public class DbContextFactory
     {
-        public static StoreContext GetCurrentDbContext()
+        public static StoreContext GetCurrentStoreContext()
         {
-   
+
             StoreContext currentContext = CallContext.GetData("CurrentDbContext") as StoreContext;
             if (currentContext == null)
             {
@@ -19,6 +19,10 @@ namespace DAL
                 CallContext.SetData("CurrentDbContext", currentContext);
             }
             return currentContext;
+        }
+        public static StoreContext GetStoreContext()
+        {
+            return new StoreContext();
         }
     }
 }

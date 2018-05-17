@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 
 namespace DAL
@@ -10,15 +11,23 @@ namespace DAL
     public class BaseRepository<T> where T : class
     {
 
-        public System.Data.Entity.DbContext db = DbContextFactory.GetCurrentDbContext();
+        public System.Data.Entity.DbContext Context = DbContextFactory.GetCurrentStoreContext();
+
+      
+        public int SaveChanges()
+        {
+            return Context.SaveChanges();
+        }
+
+        public IQueryable<T> Table { get { return Context.Set<T>(); } }
 
         public T Create(T t)
         {
-            return db.Set<T>().Add(t);
+            return Context.Set<T>().Add(t);
         }
-        public List<T> GetList(System.Linq.Expressions.Expression<Func<T, bool>> fun)
+        public IQueryable<T> GetList(System.Linq.Expressions.Expression<Func<T, bool>> fun)
         {
-            return db.Set<T>().Where(fun).ToList();
+            return Context.Set<T>().Where(fun);
         }
     }
 }

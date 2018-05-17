@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APP", "APP\APP.csproj", "{7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APPNET", "APPNET\APPNET.csproj", "{22416C78-C462-49E9-9F32-5925677412F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{55CFE2BB-DE80-467A-8BE7-316DEBDD404B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{22416C78-C462-49E9-9F32-5925677412F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22416C78-C462-49E9-9F32-5925677412F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22416C78-C462-49E9-9F32-5925677412F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55CFE2BB-DE80-467A-8BE7-316DEBDD404B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55CFE2BB-DE80-467A-8BE7-316DEBDD404B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55CFE2BB-DE80-467A-8BE7-316DEBDD404B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55CFE2BB-DE80-467A-8BE7-316DEBDD404B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
